@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgba(0, 0, 0, 0.7) url("https://a2ztipsnepal.com/wp-content/uploads/Changu-Narayan-Temple-of-Nepal.jpg");
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.header{
+    height: 70px;
+}
+
+.section{
+   display: flex;
+   flex-direction:column ;
+   justify-content: center;
+   padding: 0 30px;
+   gap: 20px;
+}
+.about-us{
+   height: 100vh;
+}
+
+.span-heading{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    left: 0;
+}
+
+.heading-line{
+    width: 10px;
+    height: 70px;
+    float:right;
+    background-color: red;
+    right: auto;
+    display: block;
+}
+
+.common-heading{
+    color: white;
+    font-size: 48px;
+    padding-left:5px ;
+    padding-left: 10px;
+}
+
+.about-us-para{
+    color: white;
+    font-size: 20px;
+}
+
+
+
+/* form styling starts */
+
+
+    .registration-form{
+        gap: 80px;
+    }
+    .form-parent{
+        width: 100%;
+        justify-content: center;
+        display: flex;
+    }
+
+    .form-body{
+        width: 95%;
+        /* height: 95vh; */
+        display: flex;
+        justify-content: center;
+        /* background-color: #ffffff; */
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.19);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(1.5px);
+        -webkit-backdrop-filter: blur(8.5px);
+        border: 1px solid rgba(255, 255, 255, 0.26);
+    }
+    #registration-form{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: relative;
+        padding: 50px 5%;
+        letter-spacing: 2px;
+    }
+
+    .form label{
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+    }
+
+    .form input{
+        width: 100%;
+        font-size: 18px;
+        border-radius: 20px;
+        border: 2px solid rgba(235, 202, 202, 0.7);
+        padding: 20px;
+    }
+
+
+    .form input:last-of-type{
+        width: 70%;
+        margin: 0 auto;
+        background: linear-gradient(120deg, rgb(199, 194, 255), rgb(16, 0, 156));
+        background-size: 200% 100%;
+        background-position: 100% 0;
+        transition: background-position .5s;
+        border: none;
+        color: white;
+    }
+
+    .form input:last-of-type:hover{
+        background-position: 0 0;
+    }
+
+/* form styling ends */
+
+
+/* Gallery styling */
+
+    .gallery{
+        padding: 0%;
+    }
+    .gallery-heading{
+        padding: 20px;
+    }
+
+    .gallery-body{
+        /* width: 100vw; */
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(300px,300px));
+        overflow-x: hidden;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+    }
+
+    .gallery-images{
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        object-position: center;
+        transition: 0.3s;
+        border-radius: 20px;
+        box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.159);
+    }
+    .gallery-images:hover{
+        transform: scale(0.8);
+        z-index: 2;
+    }
+
+/* Gallery styling ends */
+
+
+/* calender style */
+
+    .CALENDER{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 0;
+    }
+    
+    .calender{
+        width: 800px;
+        height: 800px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(8.8px);
+        -webkit-backdrop-filter: blur(8.8px);
+        border: 1px solid rgba(255, 255, 255, 0.3);   
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        
+    }
+    
+    .calender .calender-header{
+        width: 100%;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .calender .calender-header .current-date{
+        font-size: 32px;
+    }
+
+    .calender .calender-main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .calender .calender-main ul{
+        /* display: flex; */
+        display: grid;
+        grid-template-columns: repeat(7,100px);
+        list-style: none;
+        padding: 0;
+    }
+    
+    .calender .calender-main .event{
+        font-size: 12px;
+        grid-area: header;
+    }
+    .calender .calender-main .nepdate{
+        font-size: 20px;
+        grid-area: main;
+    }
+    .calender .calender-main .tithi{
+        font-size: 11px;
+        grid-area: righten;
+
+    }
+    .calender .calender-main .engDate{
+        font-size: 11px;
+        grid-area: leften;
+    }
+
+    .calender .calender-main .weeks li{
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        font-weight: bold;
+    }
+
+    .calender .calender-main li{
+        border: 1px solid rgba(255, 255, 255, 0.192);
+        border-width: thin;
+        height: 100px;
+        position: relative;
+        display: grid;
+        grid-template-areas: 'header header header header'
+        'main main main main'
+        'righten righten leften leften';
+    }
+
+
+    .calender .calender-main span{
+        text-align: center;
+    }
+
+
+
+/* calender styling ends */
+
+@media only screen and (max-width: 611px) {
+
+    .section{
+        padding: 70px 30px;
+    }
+
+    .common-heading {
+        font-size: 36px;
+    }
+
+    .about-us{
+        height: 66vh;
+        padding: 0 30px;
+    }
+    
+    .about-us-para{
+        font-size: 18px;
+    }
+
+    .gallery-body{
+        grid-template-columns: repeat(auto-fill,minmax(150px,150px));
+
+    }
+    
+    .gallery-images{
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        object-position: center;
+    
+    }
+
+
+}
